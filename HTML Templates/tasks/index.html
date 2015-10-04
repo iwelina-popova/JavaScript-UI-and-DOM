@@ -1,0 +1,22 @@
+<script type="something">
+	<table class="items-table"> 
+  <thead>
+    <tr>
+      <th>#</th>
+	  {{each this.headers}}
+      <th>{{this}}</th>
+    {{/each}}
+    </tr>
+  </thead>
+  <tbody>
+    {{each this.item}}
+      <tr>
+        <td>{{@index}}</td>
+        <td>{{this.col1}}</td>
+        <td>{{this.col2}}</td>
+        <td>{{this.col3}}</td> 
+        </tr>       
+    {{/each}}
+  </tbody>
+</table>
+</script>
